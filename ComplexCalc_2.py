@@ -52,6 +52,33 @@ def sub_range(result, i, list_of_nums):
         sub = result - list_of_nums[i]
     return sub, i
 if __name__=="__main__":
+    #showing the physical layout of calculator by storing the values in dictionaries
+    top_left = {"key":9}
+    top_mid = {"key":8}
+    top_rite = {"key":7}
+
+    mid_left = {"key":6}
+    mid_mid = {"key":5}
+    mid_rite = {"key":4}
+
+    bot_left = {"key":3}
+    bot_mid = {"key":2}
+    bot_rite = {"key":1}
+
+    bottom_zero = {"key":0}
+    op_left = {"key":"/"}
+    op_mid = {"key":"-"}
+    op_rite = {"key":"*"}
+
+    below_op = {"key":"+"}
+
+    #writing code to display the calculator
+    print("\t",top_left["key"],"  ",top_mid["key"],"  ",top_rite["key"],"\n\t"
+          , mid_left["key"],"  ",mid_mid["key"],"  ",mid_rite["key"],"\n\t"
+          ,bot_left["key"],"  ",bot_mid["key"],"  ",bot_rite["key"],"\n\t-----",bottom_zero["key"],"-----\n\t",
+          op_left["key"],"  ",op_mid["key"],"  ",op_rite["key"],
+          "\n\t-----",below_op["key"],"-----\n\t")
+
     #Kick starting the accepting of records
     list_of_nums = []
     num1 = float(input("enter the number"))
